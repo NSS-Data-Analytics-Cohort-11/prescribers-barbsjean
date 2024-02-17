@@ -86,6 +86,7 @@ ORDER BY total_drug_cost DESC;
 
 -- ANSWER: Insulin Glargine, HUM.REC.ANLOG
 
+<<<<<<< HEAD
 -- 3. b. Which drug (generic_name) has the hightest total cost per day? **Bonus: Round your cost per day column to 2 decimal places. Google ROUND to see how this works.**  COME BACK TO THIS ONE
 
 **************************************************************
@@ -114,6 +115,13 @@ FROM drug
 	ON drug.drug_name = prescription.drug_name
 GROUP BY drug.drug_name, drug.opioid_drug_flag, drug.antibiotic_drug_flag 
 ORDER BY drug_type, total_drug_cost DESC;
+=======
+-- 3. b. Which drug (generic_name) has the hightest total cost per day? **Bonus: Round your cost per day column to 2 decimal places. Google ROUND to see how this works.**
+
+SELECT *
+from prescription
+	
+>>>>>>> ae12f5d1a0da4068e80fbdfc437fde6b00e92df8
 
 
 
@@ -121,6 +129,7 @@ ORDER BY drug_type, total_drug_cost DESC;
 
 
 
+<<<<<<< HEAD
 *******************
 
 SELECT 
@@ -270,3 +279,6 @@ WHERE p1.specialty_description ILIKE 'pain management'
 GROUP BY
 	p1.npi,
 	d.drug_name;  -- Why am I getting 364??
+=======
+
+>>>>>>> ae12f5d1a0da4068e80fbdfc437fde6b00e92df8
